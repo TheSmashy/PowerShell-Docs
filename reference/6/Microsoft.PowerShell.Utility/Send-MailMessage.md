@@ -53,7 +53,7 @@ It specifies a priority value of High and requests a delivery notification by em
 ### Example 3: Send email to a mailing list
 
 ```powershell
-Send-MailMessage -To "User01 <user01@example.com>" -From "ITGroup <itdept@example.com>" -Cc "User02 <user02@example.com>" -bcc "ITMgr <itmgr@example.com>" -Subject "Don't forget today's meeting!" -Credential domain01\admin01 -UseSsl
+Send-MailMessage -From "User01 <user01@example.com>" -To "ITGroup <itdept@example.com>" -Cc "User02 <user02@example.com>" -Bcc "ITMgr <itmgr@example.com>" -Subject "Don't forget today's meeting!" -Credential domain01\admin01 -UseSsl
 ```
 
 This command sends an email message from User01 to the ITGroup mailing list with a copy (Cc) to User02 and a blind carbon copy (Bcc) to the IT manager (ITMgr).
